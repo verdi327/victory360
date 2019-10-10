@@ -22,7 +22,21 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Victory360`,
+        short_name: `Victory360`,
+        start_url: `/`,
+        background_color: `#6b37bf`,
+        theme_color: `#6b37bf`,
+        display: `standalone`,
+        icon: `src/images/V360-favicon.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
   ],
   siteMetadata: {
     title: `Victory360`,

@@ -5,9 +5,15 @@ import Calendly from '../components/calendly'
 import Navbar from '../components/navbar/navbar'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Blockquote from '../components/blockquote/blockquote'
+import SEO from '../components/seo'
 
 export default ({data}) => (
   <>
+    <SEO
+      title='Victory360 Home Page'
+      description='Learn why Victory360 is the go to marketing agency for Democratics in Maryland'
+    />
     <Navbar/>
     <Layout>
       <Img style={{marginBottom: '10px', borderRadius: '50%'}} fixed={data.file.childImageSharp.fixed} />
@@ -26,8 +32,12 @@ export default ({data}) => (
       </p>
 
       <p>
-        I’m no politician and I’m not well versed in politics, but what I do know is marketing.  I know that to connect with someone, you actually need to know something about them.  Marketing campaigns fail when companies sound too generic; trying to be everything to everyone.  To a consumer, it seems inauthenticate and no connection is made.
+        I’m no politician and I’m not well versed in politics, but what I do know is marketing.  I know that to connect with someone, you actually need to know something about them.
       </p>
+
+      <Blockquote>
+        Marketing campaigns fail when companies sound too generic; trying to be everything to everyone.  To a consumer, it seems inauthenticate and no connection is made.
+      </Blockquote>
 
       <p>
         What I'm saying isn’t news to you.  You know this, but up until now, you didn’t know it possible to connect with your constituents in a personalized way that is both cost effective and scalable.  Leading brands tailor their marketing based off hundreds of data points on a given individual, political campaigns should be doing the same. 
@@ -41,9 +51,9 @@ export default ({data}) => (
         I know we can do better and I started Victory360 specifically to help the right candidate win.
       </p>
 
-      <p>
+      <Blockquote>
         Our approach is different.  We focus on connection.  Using hundreds of data points we are able to build unique profiles about each constituent and then target them through personalized print and digital campaigns.
-      </p>
+      </Blockquote>
 
       <p>
         Interested? The video below outlines are approach in more detail.
@@ -51,7 +61,7 @@ export default ({data}) => (
 
       <Vimeo video='365230864' responsive/>
 
-      <h4>What’s the value of a single vote?</h4>
+      <h3>What’s the value of a single vote?</h3>
 
       <p>
         Consider the recent Democratic primary for Baltimore County Executive.  Johnny Olszewski won the bid by 17 votes, a margin of less than 0.1 percent.  As races become closer, it will be candidates that are able to connect with their voters that will, not those with the largest budgets.
@@ -68,7 +78,8 @@ export default ({data}) => (
 
 export const query = graphql`
   query {
-    file {
+    file(relativePath: {regex: "/mike-demos/"}) {
+      id
       childImageSharp {
         fixed(width: 200, height: 200) {
           base64
