@@ -55,20 +55,21 @@ export default ({data}) => (
         Our approach is different.  We focus on connection.  Using hundreds of data points we are able to build unique profiles about each constituent and then target them through personalized print and digital campaigns.
       </Blockquote>
 
-      <p>
-        Interested? The video below outlines are approach in more detail.
-      </p>
+      <h3>Interested?</h3>
+      <p>The video below outlines are approach in more detail.</p>
 
       <Vimeo video='365230864' responsive/>
 
       <h3>What’s the value of a single vote?</h3>
 
       <p>
-        Consider the recent Democratic primary for Baltimore County Executive.  Johnny Olszewski won the bid by 17 votes, a margin of less than 0.1 percent.  As races become closer, it will be candidates that are able to connect with their voters that will, not those with the largest budgets.
+        Consider the recent Democratic primary for Baltimore County Executive.  Johnny Olszewski won the bid by 17 votes, a margin of less than 0.1 percent.  As races become closer, it will be candidates that are able to connect with their voters that win, not those with the largest budgets.
       </p>
 
+      <h3>Let's Meet</h3>
+      
       <p>
-        If you’re ready to connect with your constituents in ways that matter to them, then let’s talk.  Use the following tool below to book time directly on my calendar.  In our intro call we’ll get to know each other better, answer any questions you may have and see if there is a connection between the two of us.
+        If you’re ready to connect with your constituents in ways that matter to them, then let’s talk.  Use the following tool below to book time directly on my calendar.
       </p>
 
       <Calendly/>
