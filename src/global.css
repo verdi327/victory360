@@ -1,0 +1,23 @@
+:root {
+  --primary: #0015BC;
+  --white: #FFFFFF;
+  --secondary: #FF0000;
+  --black: #000000;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+  text-shadow: none;
+  color: var(--black);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+}

@@ -16,11 +16,14 @@ export default ({data}) => (
     />
     <Navbar/>
     <Layout>
-      <Img style={{marginBottom: '10px', borderRadius: '50%'}} fixed={data.file.childImageSharp.fixed} />
-      <h2 style={{marginTop: 0}}>
-        <span role='img' aria-label='hand-waving' style={{fontSize: '2rem', marginRight: '15px'}}>👋</span>
-        I'm Mike Demos
-      </h2>
+      <div className='header'>
+        <Img style={{marginBottom: '10px', borderRadius: '50%'}} fixed={data.file.childImageSharp.fixed} />
+        <h2 style={{marginTop: 0}}>
+          <span role='img' aria-label='hand-waving' style={{fontSize: '2rem', marginRight: '15px'}}>👋</span>
+          I'm Michael DeMos
+        </h2>
+      </div>
+      
       <p>
         I’m a veteran and a small business owner.  I’m also a Maryland native.  I grew up in Baltimore County.  I went to school at McDaniel College and for the last 25 years I’ve been running marketing campaigns for businesses - focusing on direct mail and non profit fundraising. 
       </p>
@@ -36,7 +39,7 @@ export default ({data}) => (
       </p>
 
       <Blockquote>
-        Marketing campaigns fail when companies sound too generic; trying to be everything to everyone.  To a consumer, it seems inauthenticate and no connection is made.
+        Marketing campaigns fail when companies sound too generic; trying to be everything to everyone.  To a consumer, it seems inauthenticate.
       </Blockquote>
 
       <p>
@@ -52,7 +55,7 @@ export default ({data}) => (
       </p>
 
       <Blockquote>
-        Our approach is different.  We focus on connection.  Using hundreds of data points we are able to build unique profiles about each constituent and then target them through personalized print and digital campaigns.
+        We focus on connection by using hundreds of data points to target constituents through personalized print and digital campaigns.
       </Blockquote>
 
       <h3>Interested?</h3>
